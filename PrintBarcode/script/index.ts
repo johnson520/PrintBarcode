@@ -19,10 +19,17 @@ function generate10() {
 
         let s: string;
         do {
-            s = "";
-            for (let j = 0; j < 8; ++j) {
-                s += Math.ceil(Math.random() * 9).toString();
+            s = "VL";
+
+            var check = 0;
+
+            for (let j = 0; j < 6; ++j) {
+                var d = Math.ceil(Math.random() * 9);
+                s += d.toString();
+                check += d;
             }
+            s += (check % 10).toString();
+
         } while (generated.indexOf(s) !== -1);
 
         generated.push(s);
@@ -60,8 +67,8 @@ const scannerState = {
 
 const onDetected = (data) => {
 
-    if (!data.codeResult || !data.codeResult.code || !/\d{8}/.test(data.codeResult.code))
-        return;
+    //if (!data.codeResult || !data.codeResult.code || !/\d{8}/.test(data.codeResult.code))
+    //    return;
 
     stopScan();
 

@@ -69,7 +69,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="backlogos.html" />
+    <Content Include="librarycard.html" />
     <Content Include="packages.config" />
+    <Content Include="scan_header_logo.svg" />
+    <Content Include="style.css" />
     <Content Include="tsconfig.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -93,6 +97,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="librarycard.ts" />
     <TypeScriptCompile Include="script\index.ts" />
   </ItemGroup>
   <ItemGroup>

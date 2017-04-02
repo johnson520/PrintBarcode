@@ -1,0 +1,80 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+}
+
+table.backlogo h1, table.backlogo h2, table.backlogo h3, table.backlogo img {
+    display: none;
+}
+
+table:not(.backlogo) .barcode {
+    display: none;
+}
+
+table.backlogo .card {
+    background-color: white;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    padding: 0;
+}
+
+table.backlogo td {
+    background-color: white;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.card {
+    width: 3.5in;
+    height: 2in;
+    position: relative;
+    background-color: #eee;
+    box-sizing: border-box;
+    font-family: Segoe UI Light, sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: left;
+    padding-left: 20px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 20pt;
+    padding-top: 60px;
+}
+
+img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 40px;
+}
+
+.barcode {
+    display: inline-block;
+}
+
+.svgWrapper {
+    display: inline-block;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0;
+    padding-bottom: 50px;
+    width: 3.5in;
+    height: 2in;
+    text-align: left;
+    vertical-align: top;
+    background-color: #eee;
+}
+
+td:first-child {
+    padding-right: .5in;
+}
