@@ -72,6 +72,7 @@
     <Content Include="backlogos.html" />
     <Content Include="librarycard.html" />
     <Content Include="packages.config" />
+    <Content Include="ReaderCards.aspx" />
     <Content Include="scan_header_logo.svg" />
     <Content Include="style.css" />
     <Content Include="tsconfig.json" />
@@ -95,6 +96,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReaderCards.aspx.cs">
+      <DependentUpon>ReaderCards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReaderCards.aspx.designer.cs">
+      <DependentUpon>ReaderCards.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="librarycard.ts" />
