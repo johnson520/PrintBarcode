@@ -37,7 +37,7 @@ namespace PrintBarcode
 
                 var ReaderBarcode = HttpUtility.HtmlEncode(s);
 
-                sb.AppendLine($@"<div class='card' style='top: {y:0.0}in; left: {x:0.0}in;'><table><tr><td>
+                sb.AppendLine($@"<div class='card' style='top: {y:0.00}in; left: {x:0.00}in;'><table><tr><td>
                         <h1>{ReaderName}</h1>
                         <h2>{Role}</h2>
                         <h3>{LibraryName}</h3>

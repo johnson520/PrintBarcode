@@ -21,6 +21,11 @@
             padding: 16px 0.5in 0;
             font-family: sans-serif;
             color: red;
+            background-color: #eee;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
         }
 
         .card {
@@ -72,13 +77,13 @@
             text-transform: uppercase;
         }
 
-        h1:empty, h3:empty {
-            border-bottom: 1px solid #666;
-        }
-
-            h1:empty:after, h3:empty:after {
-                content: "\00A0";
+            h1:empty, h3:empty {
+                border-bottom: 1px solid #666;
             }
+
+                h1:empty:after, h3:empty:after {
+                    content: "\00A0";
+                }
 
         .barcode {
             display: inline-block;
@@ -96,6 +101,23 @@
                 transform: scale(0.90);
             }
 
+        .whitestripe1, .whitestripe2 {
+            position: absolute;
+            top: 0;
+            width: 149px;
+            height: 10.5in;
+            background-color: white;
+            transform: translateX(-100%);
+        }
+
+        .whitestripe1 {
+            left: 4in;
+        }
+
+        .whitestripe2 {
+            left: 8in;
+        }
+
         @media print {
             #instructions {
                 display: none;
@@ -108,6 +130,8 @@
     </style>
 </head>
 <body>
+    <div class="whitestripe1"></div>
+    <div class="whitestripe2"></div>
     <div id="instructions">
         Print in Chrome on Avery<sup>&reg;</sup> 8869<sup>&trade;</sup> &bull; Under &ldquo;More settings&rdquo; set Margins to &ldquo;None&rdquo; &amp; enable &ldquo;Background graphics&rdquo; &bull; These instructions and the card borders won&lsquo;t print
     </div>
