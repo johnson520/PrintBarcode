@@ -17,6 +17,18 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
 # =========================
 # Operating System Files
 # =========================
